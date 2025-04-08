@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullbore Plotting Trainer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .message-box {
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+        .message-box p {
+            margin: 0;
+        }
+        .scoreboard {
+            margin-top: 20px;
+        }
+        .scoreboard ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .scoreboard li {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fullbore Plotting Trainer</h1>
+    <p>Use this to practice plotting Fullbore shooting shots!</p>
+</header>
+
+<main>
+    <div>
+        <h2>Settings</h2>
+        <button id="startBtn">Start Plotting</button>
+        <button id="pauseBtn" disabled>Pause</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="message-box" id="aiHelpBox" style="display:none;">
